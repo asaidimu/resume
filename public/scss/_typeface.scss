@@ -1,0 +1,155 @@
+// Typeface Fonts {
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/Roboto-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: normal;
+  src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+// }
+
+// Typeface Variables {
+$typography-styles-headline1: (
+  font-family: unquote("Roboto"),
+  font-size: 96
+);
+
+$typography-styles-headline2: (
+  font-family: unquote("Roboto"),
+  font-size: 60
+);
+$typography-styles-headline3: (
+  font-family: unquote("Roboto"),
+  font-size: 48
+);
+$typography-styles-headline4: (
+  font-family: unquote("Roboto"),
+  font-size: 34
+);
+$typography-styles-headline5: (
+  font-family: unquote("Roboto"),
+  font-size: 24
+);
+$typography-styles-headline6: (
+  font-family: unquote("Roboto"),
+  font-size: 20
+);
+$typography-styles-body1: (
+  font-family: unquote("Roboto"),
+  font-size: 16
+);
+$typography-styles-body2: (
+  font-family: unquote("Roboto"),
+  font-size: 14
+);
+$typography-styles-subtitle1: (
+  font-family: unquote("Roboto"),
+  font-size: 16
+);
+$typography-styles-subtitle2: (
+  font-family: unquote("Roboto"),
+  font-size: 14
+);
+$typography-styles-button: (
+  font-family: unquote("Roboto"),
+  font-size: 14
+);
+$typography-styles-overline: (
+  font-family: unquote("Roboto"),
+  font-size: 10
+);
+
+$typography-styles-caption: (
+  font-family: unquote("Roboto"),
+  font-size: 12
+);
+
+// }
+
+// Typeface Mixins {
+@mixin typeface_headline1() {
+    font-family: map-get($map:$typography-styles-headline1 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline1 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_headline2() {
+    font-family: map-get($map:$typography-styles-headline2 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline2 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_headline3() {
+    font-family: map-get($map:$typography-styles-headline3 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline3 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_headline4() {
+    font-family: map-get($map:$typography-styles-headline4 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline4 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_headline6() {
+    font-family: map-get($map:$typography-styles-headline6 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline6 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_headline5() {
+    font-family: map-get($map:$typography-styles-headline5 , $key:"font-family" );
+    $size: map-get($map:$typography-styles-headline5 , $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_body1() {
+    font-family: map-get($map:$typography-styles-body1, $key:"font-family" );
+    $size: map-get($map:$typography-styles-body1, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_body2() {
+    font-family: map-get($map:$typography-styles-body2, $key:"font-family" );
+    $size: map-get($map:$typography-styles-body2, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_subtitle1() {
+    font-family: map-get($map:$typography-styles-subtitle1, $key:"font-family" );
+    $size: map-get($map:$typography-styles-subtitle1, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_subtitle2() {
+    font-family: map-get($map:$typography-styles-subtitle2, $key:"font-family" );
+    $size: map-get($map:$typography-styles-subtitle2, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+@mixin typeface_caption() {
+    font-family: map-get($map:$typography-styles-caption, $key:"font-family" );
+    $size: map-get($map:$typography-styles-caption, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+@mixin typeface_overline() {
+    font-family: map-get($map:$typography-styles-overline, $key:"font-family" );
+    $size: map-get($map:$typography-styles-overline, $key:"font-size");
+    font-size: $size * 0.0625rem;
+}
+
+//}
+
+

@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-style: normal;
-  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  src: url(../fonts/Ubuntu-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-weight: bold;
   font-style: italic;
-  src: url(../fonts/Roboto-BoldItalic.ttf) format("truetype");
+  src: url(../fonts/Ubuntu-Italic.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-weight: bold;
   font-style: normal;
-  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  src: url(../fonts/Ubuntu-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Material Icons";
@@ -40,26 +40,27 @@
   --color-brand-twitter: #1da1f2ff;
   --color-brand-github:#24292eff;
   --color-brand-instagram:#ffffff;
-  --theme-color-divider: transparent;
+  --theme-color-divider: #212121;
   --theme-color-primary-light: #f58db04a;
   --theme-color-primary:#ff80abff;
   --theme-color-text-dark: #212121;
   --theme-color-text-light: #e3e3e3;
   --theme-color-list-item-selected-bg:var(--theme-color-primary);
   --theme-color-list-item-selected-fg:var(--color-light);
-  --theme-dimen-padding: 16px;
-  --theme-dimen-padding-mid: 8px;
-  --theme-dimen-padding-min: 4px;
-  --theme-dimen-padding-max: 32px;
-  --theme-dimen-size-fab: 48px;
-  --theme-font-default:"Roboto";
+  --theme-dimen-height-list-item: 48px;
+  --theme-dimen-height-detail-contact: 32px;
   --theme-dimen-margin: 16px;
   --theme-dimen-margin-mid: 8px;
   --theme-dimen-margin-min: 4px;
   --theme-dimen-margin-max: 32px;
-  --theme-dimen-height-list-item: 48px;
+  --theme-dimen-padding: 16px;
+  --theme-dimen-padding-mid: 8px;
+  --theme-dimen-padding-min: 4px;
+  --theme-dimen-padding-max: 32px;
+  --theme-dimen-padding-section: 32px;
+  --theme-dimen-size-fab: 48px;
+  --theme-font-default:"Roboto";
   --theme-icon-font-size: 24px;
-  --width-navigation: 256px;
   --width-social: 80px;
   --width-profile-picture: 192px;
   --height-profile-picture: 215px;
@@ -72,28 +73,71 @@
   --dimen-header-padding: 16px;
   --dimen-height-detail-div: 32px;
   --dimen-height-detail-name: 64px;
-  --dimen-padding-section: 16px;
-  --theme-color-background: white;
+  --theme-color-background: #white ;
 }
 
 html {
   font-family: var(--theme-font-default);
+  background-color: var(--theme-color-background);
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  font-family: Ubuntu;
+  font-size: 1rem;
 }
 
-.header, .footer, main {
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+}
+
+main {
   width: var(--dimen-width-content);
-  margin: auto;
+  margin: var(--theme-dimen-margin-max) auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li + li {
+  margin-top: var(--theme-dimen-margin);
+}
+
+td, th {
+  text-align: left;
+  padding: 0 var(--theme-dimen-padding-max);
+}
+
+section {
+  padding: var(--theme-dimen-padding) var(--theme-dimen-padding-max);
+}
+
+.section-header {
+  margin: var(--theme-dimen-margin-max) 0;
 }
 
 .header {
   display: flex;
-  margin-top: 1in;
+  height: fit-content;
 }
 
 .header .details {
@@ -101,64 +145,61 @@ body {
   height: var(--dimen-size-image);
   display: flex;
   flex-direction: column;
+  text-align: right;
+  margin-top: 18px;
 }
 
-.header .details div {
-  padding: 0 8px;
-  display: flex;
+.profile span {
+  display: block;
 }
 
-.detail-contact {
-  height: var(--dimen-height-detail-div);
-  line-height: var(--dimen-height-detail-div);
-  flex-shrink: 0;
-  font-size: 16px;
+.profile .section-header {
+  margin-bottom: var(--theme-dimen-margin);
 }
 
-.detail-contact + .detail-contact {
-  margin-top: 2px;
+.profile-contact {
+  padding: 4px 0;
+  font-family: Ubuntu;
+  font-size: 1rem;
 }
 
-.detail-contact span {
+.profile-contact span {
   padding-left: 8px;
 }
 
-.detail-name {
+.profile-name {
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
 }
 
-.detail-name .name {
+.profile-name .name {
   font-size: 40px;
-  display: block;
 }
 
-.detail-name .title {
-  display: block;
+.profile-name .title {
   font-size: 16px;
-  text-align: right;
+  padding: 12px 0;
 }
 
-.header .details, .header .image {
-  margin: 0 var(--dimen-header-padding);
+.divider {
+  width: 2px;
+  margin: 0 var(--theme-dimen-margin-mid);
+  margin-left: 25px;
+  background-color: var(--theme-color-divider);
+  flex-shrink: 0;
 }
 
-main {
-  margin-top: 32px;
+.image {
+  width: var(--dimen-size-image);
+  height: var(--dimen-size-image);
+  flex-grow: 1;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-}
-
-section {
-  padding: var(--dimen-padding-section);
+.image img {
+  clip-path: ellipse(108px 108px at 54% 45%);
+  margin-left: -12px;
+  margin-top: 8px;
 }
 
 .engagement {
@@ -166,34 +207,197 @@ section {
 }
 
 .engagement .date {
-  width: 13ch;
   flex-shrink: 0;
-  padding-top: 42px;
+  padding: 0 2ch;
+  padding-top: 34px;
 }
 
 .engagement .title {
   font-weight: 600;
 }
 
-.image {
-  width: var(--dimen-size-image);
-  height: var(--dimen-size-image);
-  border-radius: 50%;
-  background-color: yellow;
-  display: block;
+.skill {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.skill .level {
+  height: 12px;
+  margin-left: 16px;
+}
+
+.skill .name {
+  height: 24px;
+  line-height: 24px;
+  min-width: 8ch;
+}
+
+.open-source {
+  display: flex;
+  height: 32px;
+  line-height: 32px;
+  padding: var(--theme-dimen-padding-min) var(--theme-dimen-padding-min);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.open-source a {
+  margin-right: 12px;
+  flex-grow: 1;
+}
+
+.open-source i {
   flex-shrink: 0;
 }
 
-.footer {
-  width: 100%;
-  height: 48px;
-  line-height: 48px;
-  text-transform: uppercase;
-  text-align: center;
+.open-source:hover {
+  cursor: pointer;
+  border: 1px solid black;
 }
 
-a {
-  text-decoration: none;
+.level {
+  margin-top: 6px;
+  width: 200px;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.level::before {
+  content: "";
+  height: 12px;
+  display: inline-block;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.refrence-item {
+  margin-right: 32px;
+}
+
+.refrence-item span {
+  display: block;
+  text-align: left;
+  height: 32px;
+  line-height: 32px;
+}
+
+.refrence-item div {
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+}
+
+.refrence-item .name {
+  font-family: Ubuntu;
+  font-size: 1.25rem;
+}
+
+.refrence-item .title {
+  font-family: Ubuntu;
+  font-size: 1rem;
+}
+
+.refrence-item i {
+  margin-right: 8px;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+}
+
+.navigation li {
+  width: 100px;
+  height: 32px;
+  padding: 4px 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.navigation li:hover {
+  border: 1px solid black;
+}
+
+.navigation a {
+  line-height: 32px;
+}
+
+.navigation .selected a {
+  font-weight: 600;
+}
+
+.social {
+  height: 32px;
+  margin-top: 40px;
+}
+
+.social i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.social a {
+  padding: 4px 8px;
+  margin-right: 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  line-height: 32px;
+}
+
+.social a:hover {
+  border: 1px solid black;
+}
+
+.footer {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.l-10::before {
+  width: 10%;
+}
+
+.l-20::before {
+  width: 20%;
+}
+
+.l-30::before {
+  width: 30%;
+}
+
+.l-40::before {
+  width: 40%;
+}
+
+.l-50::before {
+  width: 50%;
+}
+
+.l-60::before {
+  width: 60%;
+}
+
+.l-70::before {
+  width: 70%;
+}
+
+.l-80::before {
+  width: 80%;
+}
+
+.l-90::before {
+  width: 90%;
+}
+
+.l-100::before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

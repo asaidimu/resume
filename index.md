@@ -1,1 +1,420 @@
-# Hello World!
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            href="public/css/fontawesome.min.css"
+            type="text/css"
+            media="screen"
+            title=""
+            charset="utf-8"
+            />
+        <link
+            rel="stylesheet"
+            href="public/css/solid.min.css"
+            type="text/css"
+            media="screen"
+            title=""
+            charset="utf-8"
+            />
+        <link
+            rel="stylesheet"
+            href="publiccss/brands.min.css"
+            type="text/css"
+            media="screen"
+            title=""
+            charset="utf-8"
+            />
+        <link
+            rel="stylesheet"
+            href="public/css/styles.css"
+            type="text/css"
+            media="all"
+            title=""
+            charset="utf-8"
+            />
+        <title>Résumé</title>
+    </head>
+    <body>
+        <main>
+            <section id="profile" class="profile">
+                <div class="header">
+                    <div class="details">
+                        <div class="profile-name">
+                            <span class="name">Johnathan Doe</span>
+                            <span class="title">Software Developer</span>
+                        </div>
+                        <div class="profile-contact">
+                            +254 123 456 789<i class="material-icons">phone</i>
+                        </div>
+                        <div class="profile-contact">
+                            jdoe@anon.com
+                            <i class="material-icons">mail</i>
+                        </div>
+                        <div class="profile-contact">
+                            P.O.Box 238-01001 Nairobi<i class="material-icons">business</i>
+                        </div>
+                    </div>
+                    <!--<div class="divider"></div>-->
+                    <div class="image">
+                        <img src="public/img/profile.png" alt="profile picture" />
+                    </div>
+                </div>
+                <h4 class="section-header">About Me</h4>
+                <div class="summary">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet.
+                </div>
+            </section>
+
+            <section id="experience" class="experience">
+                <h4 class="section-header">Professional Experience</h4>
+                <ul>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education" class="education">
+                <h4 class="section-header">Education</h4>
+                <ul>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="engagement">
+                            <div class="details">
+                                <h6>Lorem ipsum.</h6>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <span class="date">1234 - 1235</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="skills" class="interests">
+                <h4 class="section-header">Skills and Interests</h4>
+                <div class="skill">
+                    <table>
+                        <thead>
+                            <th colspan="2">Languages</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="language">
+                                    <i class="fab fa-java"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-90"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="language">
+                                    <i class="fab fa-js"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-80"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="language">
+                                    <i class="fab fa-python"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-70"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <th colspan="2">Frameworks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="framework">
+                                <i class="fab fa-angular"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-90"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="framework">
+                                <i class="fab fa-angular"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-80"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="framework">
+                                <i class="fab fa-angular"></i>
+                                </td>
+                                <td>
+                                    <span class="level l-70"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="contributions">
+                    <div class="projects">
+                        <h6>Contributions to Open Source</h6>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://www.gnu.org/software/gimp/" target="_blank">Gimp</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://neovim.io/" target="_blank">NeoVim</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://www.linux.org/" target="_blank">Linux</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <h6>Other Notable Projects</h6>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://www.gnu.org/software/gimp/" target="_blank">Gimp</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://neovim.io/" target="_blank">NeoVim</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                        <div class="contribution" onclick="location.href='#'">
+                            <a href="https://www.linux.org/" target="_blank">Linux</a>
+                            <i class="material-icons">launch</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                        <h6>Social Media</h6>
+                    <a href="" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        Johnathan Doe
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Johnathan Doe
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        @JohnDoe
+                    </a>
+                </div>
+            </section>
+
+            <section id="refrences" class="refrences">
+                <h4 class="section-header">Refrences</h4>
+                <div class="contacts">
+                    <div class="contact">
+                        <span class="name"> Johnathan Doe</span>
+                        <span class="title"> St. Paul's University</span>
+                        <div class="phone">
+                            <i class="material-icons">phone</i>
+                            +254 123 456 789
+                        </div>
+                        <div class="email">
+                            <i class="material-icons">alternate_email</i>
+                            jdoe@anon.com
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span class="name"> Johnathan Doe</span>
+                        <span class="title"> Software Engineer </span>
+                        <div class="phone">
+                            <i class="material-icons">phone</i>
+                            +254 123 456 789
+                        </div>
+                        <div class="email">
+                            <i class="material-icons">alternate_email</i>
+                            jdoe@anon.com
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span class="name"> Johnathan Doe</span>
+                        <span class="title"> Software Engineer </span>
+                        <div class="phone">
+                            <i class="material-icons">phone</i>
+                            +254 123 456 789
+                        </div>
+                        <div class="email">
+                            <i class="material-icons">alternate_email</i>
+                            jdoe@anon.com
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="navigation" id="navigation">
+                <ul>
+                    <li data-link-section="profile" class="nav-list-item active">
+                        <a href="#profile" target="">About Me</a>
+                    </li>
+                    <li data-link-section="experience" class="nav-list-item">
+                        <a href="#experience" target="">Experience</a>
+                    </li>
+                    <li data-link-section="education" class="nav-list-item">
+                        <a href="#education" target="">Education</a>
+                    </li>
+                    <li data-link-section="skills" class="nav-list-item">
+                        <a href="#skills" target="">Skills</a>
+                    </li>
+                    <li data-link-section="refrences" class="nav-list-item">
+                        <a href="#refrences" target="">Refrences</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+
+        <div class="footer">
+            Copyright <i class="material-icons">copyright</i> 2020 Johnathan Doe
+            </span>
+        </div>
+        <script src="public/js/index.js" charset="utf-8"></script>
+    </body>
+</html>

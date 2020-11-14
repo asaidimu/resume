@@ -33,7 +33,6 @@
             scrollPosition += 64;
             for (let id in offsets) {
                 if (offsets[id] < scrollPosition) {
-                    console.log(offsets[id]);
                     links.forEach((link) => {
                         link.classList.remove("active");
                     });

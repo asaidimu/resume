@@ -623,5 +623,19 @@
             </span>
         </div>
         <script src="js/index.js" charset="utf-8"></script>
+        <script charset="utf-8">
+            window.addEventListener("load", (e) => {
+                let App = window.App;
+                let list_items = document.getElementsByClassName("nav-list-item");
+                let sections = document.getElementsByTagName("section");
+
+                let scrollSpy = new App.ScrollSpy(
+                    Array.from(list_items),
+                    Array.from(sections)
+                );
+
+                window.onscroll = scrollSpy.onScroll.bind(scrollSpy);
+            });
+        </script>
     </body>
 </html>

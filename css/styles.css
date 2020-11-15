@@ -67,7 +67,7 @@
   --theme-dimen-padding-section: var(--dimen-margin-max);
   --theme-dimen-bottom-navigation: 84px;
   --theme-dimen-right-navigation: 32px;
-  --theme-dimen-margin-refrences: 25%;
+  --theme-dimen-margin-refrences: 10%;
   --theme-dimen-margin-main: 64px;
   --theme-dimen-margin-projects: 64px;
   --theme-dimen-size-fab: 48px;
@@ -103,6 +103,7 @@ span {
 main {
   width: var(--theme-dimen-width-main);
   margin: var(--theme-dimen-margin-main) auto;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 ul {

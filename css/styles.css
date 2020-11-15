@@ -136,6 +136,7 @@ h4 {
 h6 {
   margin-block-end: 0;
   margin-block-start: 0;
+  display: inline-block;
 }
 
 section {
@@ -217,14 +218,11 @@ section {
 }
 
 .engagement {
-  display: flex;
+  margin: var(--dimen-margin-max);
 }
 
 .engagement .date {
-  flex-shrink: 0;
   padding: 0 2ch;
-  padding-top: 34px;
-  order: -1;
 }
 
 .engagement .title {
@@ -309,6 +307,7 @@ section {
 
 .contacts {
   display: flex;
+  margin: var(--dimen-margin-max);
 }
 
 .contact {
@@ -377,6 +376,10 @@ section {
   margin-top: var(--dimen-margin-max);
 }
 
+.social h6 {
+  display: block;
+}
+
 .social i {
   margin-right: 8px;
   font-size: 18px;
@@ -427,6 +430,11 @@ section {
 
   .social {
     color: var(--theme-color-foreground);
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
   }
 }
 .l-10::before {

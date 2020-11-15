@@ -630,8 +630,8 @@
                 let sections = document.getElementsByTagName("section");
 
                 let scrollSpy = new App.ScrollSpy(
-                    Array.from(list_items),
-                    Array.from(sections)
+                    Array.from(list_items), /* indicators */
+                    Array.from(sections) /* targets */
                 );
 
                 window.onscroll = scrollSpy.onScroll.bind(scrollSpy);

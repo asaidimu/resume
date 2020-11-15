@@ -44,6 +44,13 @@
   --color-secondaryDark: #0069c0;
   --color-secondaryLight: #6ec6ff;
   --color-secondaryText: #fafafa;
+  --theme-color-active: var(--color-secondaryDark);
+  --theme-color-background: var(--color-primary);
+  --theme-color-foreground: var(--color-primaryText);
+  --theme-color-background-highlight: var(--color-primaryDark-alt);
+  --theme-color-background-active: var(--color-secondaryDark);
+  --theme-color-foreground-active: var(--color-secondaryText);
+  --theme-color-divider: var(--color-primaryText);
   --dimen-margin: 16px;
   --dimen-margin-max: 32px;
   --dimen-margin-mid: 8px;
@@ -52,18 +59,12 @@
   --dimen-padding-max: 32px;
   --dimen-padding-mid: 8px;
   --dimen-padding-min: 4px;
-  --theme-color-active: var(--color-secondaryDark);
-  --theme-color-background: var(--color-primary);
-  --theme-color-foreground: var(--color-primaryText);
-  --theme-color-background-highlight: var(--color-primaryDark-alt);
-  --theme-color-background-active: var(--color-secondaryDark);
-  --theme-color-foreground-active: var(--color-secondaryText);
-  --theme-color-divider: var(--color-primaryText);
   --theme-dimen-width-main: 1000px;
   --theme-dimen-width-projects: 300px;
   --theme-dimen-height-detail-contact: 32px;
   --theme-dimen-height-clickable: 32px;
   --theme-dimen-height-footer: 48px;
+  --theme-dimen-height-tooltip: 48px;
   --theme-dimen-padding-section: var(--dimen-margin-max);
   --theme-dimen-bottom-navigation: 84px;
   --theme-dimen-right-navigation: 32px;
@@ -272,6 +273,25 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+td:hover .level::after {
+  display: block;
+}
+
+.level::after {
+  display: none;
+  position: absolute;
+  background-color: var(--theme-color-background-highlight);
+  width: 12ch;
+  text-align: center;
+  height: var(--theme-dimen-height-tooltip);
+  line-height: var(--theme-dimen-height-tooltip);
+  top: 16px;
+  right: 0;
+  border-radius: var(--theme-dimen-radius-default);
+  z-index: 2;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .contributions {
@@ -483,6 +503,46 @@ section {
 
 .l-100::before {
   width: 100%;
+}
+
+.l-10::after {
+  content: "Poor";
+}
+
+.l-20::after {
+  content: "Poor";
+}
+
+.l-30::after {
+  content: "Fair";
+}
+
+.l-40::after {
+  content: "Fair";
+}
+
+.l-50::after {
+  content: "Average";
+}
+
+.l-60::after {
+  content: "Average";
+}
+
+.l-70::after {
+  content: "Good";
+}
+
+.l-80::after {
+  content: "Good";
+}
+
+.l-90::after {
+  content: "Excellent";
+}
+
+.l-100::after {
+  content: "Excellent";
 }
 
 /* } */
